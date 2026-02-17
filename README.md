@@ -20,12 +20,12 @@
 - **技術スタック**: Python, Streamlit, OpenCV
 - **こだわり**: インストール不要で、プラットフォーム構築などが厳しい方にもサクッと色置換・背景透過が出来るように作成しました。
 
-## 3. 技術的なこだわり
+## 技術的なこだわり
 - **FloodFillアルゴリズムの活用**: OpenCVのFloodFillを用い、境界線を判別した精度の高い色置換を実現。
 - **クロスプラットフォーム対応**: 異なるUIライブラリ（Tkinter / Streamlit）を用いて、同じロジックを別環境へ移植する実装力を重視しました。
 
-## 4. ディレクトリ構成
-```
+## Project Structure
+```text
 line-stamp-color-editor/
 ├── desktop_app/           # デスクトップ版 (Tkinter)
 │   └── linestump_colorchanger.py
