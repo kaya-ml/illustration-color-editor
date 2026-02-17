@@ -25,7 +25,7 @@
 - **ロジックの共通化とUIの書き分け**: 画像処理を行う「コアロジック」は共通化しつつ、GUI（Tkinter）とWeb（Streamlit）という異なるフロントエンドに対応させました。
 - **アルファチャンネル（透過）の制御**: PNG画像の透過情報を保持したまま色を塗り替える、あるいは不透明な背景をアルファチャンネルへ変換する処理など、スタンプ制作に不可欠な透過処理をしっかり制御しています。
 
-## Project Structure
+## Project Structure / 構成
 ```text
 line-stamp-color-editor/
 ├── desktop_app/           # デスクトップ版 (Tkinter)
