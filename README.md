@@ -20,6 +20,9 @@ LINEスタンプ制作を効率化するための、色置換・背景透過ツ�
 - **技術スタック**: Python, Streamlit, OpenCV
 - **主な用途**: 外出先での簡単な修正や、環境構築が不要なライトユーザー向け。
 
-## 🛠 技術的なこだわり
+## 3. 技術的なこだわり
 - **FloodFillアルゴリズムの活用**: OpenCVのFloodFillを用い、境界線を判別した精度の高い色置換を実現。
 - **クロスプラットフォーム対応**: 異なるUIライブラリ（Tkinter / Streamlit）を用いて、同じロジックを別環境へ移植する実装力を重視しました。
+
+## another
+web上アプリ：https://huggingface.co/spaces/creamybrother/illustration-color-editor
