@@ -20,9 +20,10 @@
 - **技術スタック**: Python, Streamlit, OpenCV
 - **こだわり**: インストール不要で、プラットフォーム構築などが厳しい方にもサクッと色置換・背景透過が出来るように作成しました。
 
-## 技術的なこだわり
+## Technical Highlights / 技術的なこだわり
 - **FloodFillアルゴリズムの活用**: OpenCVのFloodFillを用い、境界線を判別した精度の高い色置換を実現。
-- **クロスプラットフォーム対応**: 異なるUIライブラリ（Tkinter / Streamlit）を用いて、同じロジックを別環境へ移植する実装力を重視しました。
+- **ロジックの共通化とUIの書き分け**: 画像処理を行う「コアロジック」は共通化しつつ、GUI（Tkinter）とWeb（Streamlit）という異なるフロントエンドに対応させました。
+- **アルファチャンネル（透過）の制御**: PNG画像の透過情報を保持したまま色を塗り替える、あるいは不透明な背景をアルファチャンネルへ変換する処理など、スタンプ制作に不可欠な透過処理をしっかり制御しています。
 
 ## Project Structure
 ```text
@@ -35,3 +36,9 @@ line-stamp-color-editor/
 │   └── requirements.txt
 └── README.md              # リポジトリ全体のメインREADME
 ```
+
+## Tech Stack / 使用技術
+- Language: Python 3.10+
+- Libraries: OpenCV, NumPy, Pillow, Tkinter, Streamlit
+- Platform: Windows (Desktop) / Hugging Face Spaces (Web)
+
