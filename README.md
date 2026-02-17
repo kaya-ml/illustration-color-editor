@@ -1,2 +1,25 @@
-# -illustration-color-editor
-Desktop and Web image color replacement &amp; transparency editor using OpenCV, Tkinter, and Streamlit.
+# Line Stamp Color Editor 🎨
+
+LINEスタンプ制作を効率化するための、色置換・背景透過ツールです。
+利用シーンに合わせて、**「高機能なデスクトップ版」**と**「手軽なWeb版」**の2つの形態で提供しています。
+
+## 🌟 プロジェクトの概要
+イラストの特定の色を一括置換したり、背景を透過させたりする作業を、クリック操作だけで完結させます。
+
+## 🚀 選べる2つの実行環境
+
+### 1. デスクトップ版 (Tkinter)
+ローカル環境で動作する、クリエイター向けのツールです。
+- **特徴**: 大量の画像に対する「一括処理機能」を搭載。
+- **技術スタック**: Python, OpenCV, Tkinter
+- **主な用途**: 複数スタンプの肌色を一気に変更するなど、プロフェッショナルな編集。
+
+### 2. Web版 (Streamlit / Hugging Face Spaces)
+ブラウザ上でインストール不要ですぐに使える手軽なツールです。
+- **URL**: [あなたのHugging FaceのURL]
+- **技術スタック**: Python, Streamlit, OpenCV
+- **主な用途**: 外出先での簡単な修正や、環境構築が不要なライトユーザー向け。
+
+## 🛠 技術的なこだわり
+- **FloodFillアルゴリズムの活用**: OpenCVのFloodFillを用い、境界線を判別した精度の高い色置換を実現。
+- **クロスプラットフォーム対応**: 異なるUIライブラリ（Tkinter / Streamlit）を用いて、同じロジックを別環境へ移植する実装力を重視しました。
